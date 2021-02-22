@@ -36,7 +36,7 @@
        <enum>QFrame::Plain</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="about_page">
        <layout class="QGridLayout" name="gridLayout">
@@ -59,33 +59,56 @@
        <layout class="QFormLayout" name="formLayout">
         <item row="0" column="0" colspan="2">
          <widget class="QGroupBox" name="ethernetBox">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
           <property name="title">
            <string>Interface Ethernet</string>
           </property>
           <layout class="QFormLayout" name="formLayout_2">
            <item row="0" column="0">
-            <widget class="QLabel" name="ip_address_eth_label">
-             <property name="text">
-              <string>IP Address</string>
+            <widget class="QLabel" name="interface_name_label">
+             <property name="enabled">
+              <bool>true</bool>
              </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="subnet_mask_eth_label">
              <property name="text">
-              <string>Subnet Mask</string>
+              <string>Interface Name:</string>
              </property>
             </widget>
            </item>
            <item row="0" column="1">
-            <widget class="QLineEdit" name="ip_address_eth_value">
+            <widget class="QLabel" name="interface_name_value">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>None</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="ip_address_eth4_label">
+             <property name="text">
+              <string>IPv4 Address:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="ip_address_eth4_value">
              <property name="enabled">
               <bool>false</bool>
              </property>
             </widget>
            </item>
-           <item row="1" column="1">
-            <widget class="QLineEdit" name="subnet_mask_eth_value">
+           <item row="2" column="0">
+            <widget class="QLabel" name="ip_address_eth6_label">
+             <property name="text">
+              <string>IPv6 Address:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="ip_address_eth6_value">
              <property name="enabled">
               <bool>false</bool>
              </property>
@@ -96,35 +119,55 @@
         </item>
         <item row="1" column="0" colspan="2">
          <widget class="QGroupBox" name="wirelessBox">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
           <property name="title">
            <string>Interface Wireless</string>
           </property>
           <layout class="QFormLayout" name="formLayout_3">
-           <item row="0" column="0">
-            <widget class="QLabel" name="ip_address_wifi_label">
-             <property name="text">
-              <string>IP Address</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QLineEdit" name="ip_address_wifi_value">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
            <item row="1" column="0">
-            <widget class="QLabel" name="subnet_mask_wifi_label">
+            <widget class="QLabel" name="ip_address_wifi4_label">
              <property name="text">
-              <string>Subnet Mask</string>
+              <string>IPv4 Address:</string>
              </property>
             </widget>
            </item>
            <item row="1" column="1">
-            <widget class="QLineEdit" name="subnet_mask_wifi_value">
+            <widget class="QLineEdit" name="ip_address_wifi4_value">
              <property name="enabled">
               <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="ip_address_wifi6_label">
+             <property name="text">
+              <string>IPv6 Address</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="ip_address_wifi6_value">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="interface2_name_label">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>Interface Name:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="interface2_name_value">
+             <property name="text">
+              <string>None</string>
              </property>
             </widget>
            </item>

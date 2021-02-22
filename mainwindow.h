@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtNetwork/QNetworkInterface>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -34,6 +35,9 @@ private:
     const int SOUND_PAGE = 2;
     const int SENSORS_PAGE = 3;
     const int CAMERA_PAGE = 4;
+
+    static const QList<QNetworkInterface> all_interfaces;
+    void set_network_page();
 
 };
 #endif // MAINWINDOW_H
