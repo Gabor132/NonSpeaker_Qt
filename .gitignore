@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Qt Build Folders
+build-Non_Speaker_Qt-*/

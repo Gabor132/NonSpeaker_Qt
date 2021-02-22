@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/img/icons">
+        <file alias="sound_on">img/icons/volume_up.svg</file>
+        <file alias="sound_off">img/icons/volume_off.svg</file>
+        <file alias="wifi_off">img/icons/wifi_off.svg</file>
+        <file alias="sensors_off">img/icons/sensors_off.svg</file>
+        <file alias="sensors_on">img/icons/sensors-on.svg</file>
+        <file alias="power_off">img/icons/shutdown.svg</file>
+        <file alias="camera_on">img/icons/camera_on.svg</file>
+        <file alias="wifi_on">img/icons/wifi_on.svg</file>
+        <file alias="ethernet_on">img/icons/ethernet_on.svg</file>
+        <file alias="camera_off">img/icons/camera_off.svg</file>
+    </qresource>
+</RCC>
